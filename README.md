@@ -38,3 +38,41 @@ float_result = 9./2
 ```python
 same_data_type = "hello I'm number " + str(2) + " in string"
 ```
+# Working with strings, list and consoles
+
+1. When writing a string with "...'... ", to prevent premature end of the string use '\' operator as follows:
+```python
+my_String = 'There's a snake in my boot!'
+#printing the string above would generate an error. So, use the following form instead
+my_String = 'There\'s a snake in my boot!'
+#printing this would generate no error
+```
+2. Access certain elements in a string using the following statement:
+```python
+str_element = "Names!"[5]
+#the statement above capture the last element of the string "Names!"
+```
+
+3. Following functions enable you to do certain tasks with strings:
+```python
+str = "Names"
+len(str) # gives the length of the string
+str.upper() # converts the string to all uppercase
+str.lower() # coverts the string to all lowercase
+str(2000) # converts int 2000 to string
+```
+
+4. String can be formatter dynamically using operators like %s and %02d as shown below:
+```python
+number = 2
+print "the number we are looking for is %s" %(number)
+```
+5. Information can be received from the console using 'raw_input()'
+```python
+name = raw_input("What is your name? ")
+quest = raw_input("What is your quest? ")
+color = raw_input("What is your favorite color? ")
+
+print "Ah, so your name is %s, your quest is %s, " \
+"and your favorite color is %s." % (name, quest, color)
+```
