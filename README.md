@@ -76,3 +76,14 @@ color = raw_input("What is your favorite color? ")
 print "Ah, so your name is %s, your quest is %s, " \
 "and your favorite color is %s." % (name, quest, color)
 ```
+# Working with Lists
+
+1. Numerous operators can be used while dealing with lists as used in the code snippet below:
+```python
+mylist = [a, a, b]
+#or
+mylist = [a]*2 + [b]
+#linearly traversing a list
+for a in mylist:
+  
+Reference: http://interactivepython.org/runestone/static/pythonds/AlgorithmAnalysis/Dictionaries.html
