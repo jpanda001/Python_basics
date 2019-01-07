@@ -76,7 +76,7 @@ color = raw_input("What is your favorite color? ")
 print "Ah, so your name is %s, your quest is %s, " \
 "and your favorite color is %s." % (name, quest, color)
 ```
-# Working with Lists
+# Working with Lists, For and While loops
 
 1. Numerous operators can be used while dealing with lists as used in the code snippet below:
 ```python
@@ -84,6 +84,20 @@ mylist = [a, a, b]
 #or
 mylist = [a]*2 + [b]
 #linearly traversing a list
-for a in mylist:
-  
+#common way
+for x in range(0, len(mylist)):
+  if mylist[x] = 'a':
+    return True
+#or
+for x in mylist:
+  if x == 'a':
+    return True
+```
+
+2. Following is the way to implement a while loop in python:
+```python
+while a<6:
+  print "running"
+```
+
 Reference: http://interactivepython.org/runestone/static/pythonds/AlgorithmAnalysis/Dictionaries.html
