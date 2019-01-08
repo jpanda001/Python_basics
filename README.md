@@ -76,7 +76,17 @@ color = raw_input("What is your favorite color? ")
 print "Ah, so your name is %s, your quest is %s, " \
 "and your favorite color is %s." % (name, quest, color)
 ```
-# Working with Lists, For and While loops
+6. Exception handling:
+```python
+try:
+       print(math.sqrt(anumber))
+    except:
+       print("Bad Value for square root")
+       print("Using absolute value instead")
+       print(math.sqrt(abs(anumber)))
+```
+ 
+# Working with Lists, For and While loops, and other useful structures
 
 1. Numerous operators can be used while dealing with lists as used in the code snippet below:
 ```python
@@ -99,5 +109,24 @@ for x in mylist:
 while a<6:
   print "running"
 ```
+
+3. Making a class:
+```python
+class Fraction:
+
+    def __init__(self,top,bottom):
+        self.num = top
+        self.den = bottom
+        
+    def show(self):
+      print(self.num,"/",self.den)
+     
+    def __str__(self):
+      return str(self.num)+"/"+str(self.den)
+      
+ #How to call a class:
+ myf = Fraction(3,5)
+ myf.show()
+ ```
 
 Reference: http://interactivepython.org/runestone/static/pythonds/AlgorithmAnalysis/Dictionaries.html
