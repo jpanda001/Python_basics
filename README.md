@@ -1,4 +1,4 @@
-# Commonly used syntax for Python
+# Commonly Used Syntax for Python
 1. To print something in the console use:
 ```python
 print "Hello world"
